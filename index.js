@@ -1,7 +1,7 @@
 'use strict';
 
 let scores = [0, 0], currentScore = 0, activePlayer = 0;
-const MAX_SCORE = 100;
+const MAX_SCORE = 50;
 
 const player1 = document.querySelector('.player0');
 const player2 = document.querySelector('.player1');
