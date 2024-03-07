@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    background-image: linear-gradient(to top left, #753682, #bf2e34);
+    height: 100vh;
+    font-family: 'Nunito', 'sans-serif';
+}
+
+.players {
+    width: 650px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    top: 30%;
+    left: 41%;
+    margin: 100px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255, 0.35);
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 1rem 2rem 6rem rgb(0,0,0,0.4);
+}
+
+.player {
+    font-size: 2rem;
+    transition: all 0.75s;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    white-space: nowrap;
+    align-items: center;
+    padding: 60px;
+}
+
+.total-score {
+    color: #c7365f;
+    font-size: 3.5rem;
+    flex-grow: 2;
+}
+
+.current {
+    background-color: #c7365f;
+    border-radius: 7px;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 10px;
+    color: white;
+}
+
+.current-score {
+    font-size: 1.5rem;
+}
+
+.buttons {
+    position: relative;
+    width: 0;
+    white-space: nowrap;
+    padding: 10px 0 40px 0;
+}
+
+.dice {
+    position: absolute;
+    color: #c7365f;
+    top: 120px;
+    left: -30px;
+    height: 60px;
+    width: 65px;
+    background-color: white;
+    padding: 0;
+    box-shadow: 0 1rem 2rem rgb(0,0,0,0.2);
+}
+
+.dice span {
+    font-size: 100px;
+    position: relative;
+    top: -32px;
+    left: -10px;
+}
+
+button {
+    position: absolute;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 7px 20px;
+    box-shadow: 0 1.75rem 3.5rem rgb(0,0,0,0.1);
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0 1rem 2rem rgb(0,0,0,0.15);
+}
+
+button.new-game {
+    top: 20px;
+    left: -65px;
+}
+
+button.roll-dice {
+    top: 270px;
+    left: -65px;
+}
+
+button.hold {
+    top: 310px;
+    left: -50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.player-active {
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+.player-active .name {
+    font-weight: 600;
+}
+
+.player-winner {
+    background-color: #2f2f2f;
+}
+
+.player-winner .name {
+    font-weight: 700;
+    color: #c7365f;
+}
+
+.copyright {
+    margin-top: 250px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
